@@ -1,0 +1,568 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    color: #606060;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 400;
+
+}
+
+.header-extra h2,
+.service-div h2 {
+    font-size: 0.9rem;
+    line-height: 1.1;
+    margin: 20px 0 10px 0;
+    font-weight: bold;
+    word-spacing: 2px;
+}
+
+
+/* ******************actual css start******************************************************************************* */
+
+
+.header {
+    width: 100%;
+    height: 97.5vh;
+    background-image: linear-gradient(rgba(0, 168, 255, 0.3), rgba(0, 168, 255, 0.3)), url(../image/header.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    clip-path: polygon(100% 0%, 100% 77%, 50% 100%, 0 75%, 0 0);
+    position: relative;
+}
+
+.header:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.navbar:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    opacity: 0.4;
+    z-index: -1;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+}
+
+.nav-item a {
+    color: #fff !important;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.navbar-toggler-icon {
+    width: auto !important;
+}
+
+.header-section {
+    width: 100%;
+    height: inherit;
+    color: #fff;
+    position: relative;
+    text-align: center;
+}
+
+.center-header {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+
+}
+
+.header-button a {
+    border: 1px solid #fff;
+    border-radius: 100px;
+    padding: 12px 35px;
+    margin: 0 5px;
+    outline: none;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+}
+
+.header-button a:hover {
+    color: #50d1c0;
+    text-decoration: none;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.center-header p {
+    color: #fff;
+    padding: 10px 0 20px 0;
+    font-size: 1.3rem;
+}
+
+/************************************ header part ended **************************************************************/
+
+/* ************************************** extra header start *************************************************** */
+.section2 {
+    width: 100%;
+    height: auto;
+    margin: 100px 0;
+    text-align: center;
+}
+
+.header-extra {
+    background: #fff;
+    border: medium none;
+    border-radius: 3px;
+    padding: 50px !important;
+    transition: 0.3s;
+}
+
+.header-extra:hover {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+/* ****************************************extra header end******************************************************************************** */
+/* *********************************service offer start******************************************************************************** */
+
+.serviceoffer {
+    padding: 50px 0;
+    margin-bottom: 50px;
+    background: #f7f7f9;
+}
+
+.headingoffer {
+    margin-bottom: 50px;
+}
+
+.headingoffer h1 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.offer h3 {
+    color: #2e2e2e;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+}
+
+.service-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress {
+    margin-bottom: 25px !important;
+    height: 0.8rem !important;
+    background: #606060;
+}
+
+/* *********************************service offer end******************************************************************************** */
+
+/* *********************************project work start******************************************************************************** */
+
+.project-work {
+    margin: 100px 0;
+}
+
+.project-work h1 {
+    text-align: center;
+    font-size: 2rem
+}
+
+.probox {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    padding: 35px !important;
+    border-radius: 15%;
+    margin: auto;
+}
+
+/* *********************************project work end******************************************************************************** */
+
+/* *********************************pricing start******************************************************************************** */
+
+.pricing {
+    width: 100%;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+
+.pricing:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(160deg, #16c9f6 55%, #fff 0%)
+}
+
+.money {
+    font-size: 40px;
+    line-height: 1;
+    color: #606060;
+}
+
+.card {
+    transition: 0.4s ease;
+    border-radius: 15px;
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center !important;
+    padding: 10px !important;
+    background: #fff !important;
+}
+
+.card-body {
+    text-align: center;
+    padding: 35px !important;
+}
+
+.card-body li {
+    font-size: 1.1rem;
+    color: #606060;
+    margin-bottom: 3px;
+}
+
+.card-footer {
+    text-align: center;
+    background: #fff !important;
+    padding: 30px 0 !important;
+}
+
+.card-footer a {
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    padding: 12px 35px !important;
+    margin: 0 5px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+}
+
+.card:hover .card-footer a {
+    color: #fff;
+    text-decoration: none;
+    background: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+
+}
+
+.card:hover .card-header,
+.card:hover .money {
+    color: #50d1c0;
+}
+
+/* *********************************pricing end******************************************************************************** */
+
+/* *********************************client start******************************************************************************** */
+.clients {
+    width: 100%;
+    height: 100vh;
+    padding: 80px 0;
+}
+
+.box {
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    transform: 0.3s ease;
+    padding: 50px 0;
+}
+
+.box:hover {
+    background: #16c9f6;
+}
+
+.box:hover p {
+    color: #fff;
+}
+
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -60px !important;
+}
+
+.carousel-indicators li {
+    background-color: #16c9f9 !important;
+}
+
+.box a {
+    position: relative;
+}
+
+.box a img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.box a:after {
+    content: "\f10d";
+    font-family: FontAwesome;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f9 100%);
+    color: #fff;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* *********************************client end******************************************************************************** */
+
+/* *********************************contactus start******************************************************************************** */
+.contact {
+    height: 100vh;
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+}
+
+.contact:before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: linear-gradient(330deg, #16c9f6 55%, #fff 0%)
+}
+
+.form-button button {
+    border: 1px solid #50d1c0;
+    border-radius: 100px;
+    padding: 12px 35px !important;
+    margin: 0 5px;
+    outline: none;
+    color: #50d1c0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    text-align: center;
+    background: transparent !important;
+}
+
+form:hover .form-button button {
+    background: white !important;
+    color: #50d1c0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+::placeholder {
+    font-size: 0.85rem;
+}
+
+
+.newsletter {
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.news-input {
+    border-radius: 100px 0 0 100px !important;
+    min-width: 150px;
+    min-height: 45px;
+}
+
+.input-group-text {
+    border-radius: 0 100px 100px 0 !important;
+    min-width: 120px;
+    min-height: 45px;
+}
+
+/* *********************************contactus end******************************************************************************** */
+
+/* *********************************footer start******************************************************************************** */
+
+.footer-section {
+    background: #00abff;
+    width: 100%;
+    height: auto;
+    padding: 40px 0 20px 0;
+    position: relative;
+}
+
+.footer-section p {
+    color: #fff;
+}
+
+.footer-section li a {
+    color: #fff;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.footer-section h3 {
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem !important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+.lastfooter a {
+    color: #f7f7f9;
+    padding: 5px;
+    text-decoration: none;
+}
+
+
+.lastfooter a:hover {
+    text-decoration: none;
+    color: #1e5799;
+}
+
+.footer-follow {
+    margin-bottom: 17px !important;
+}
+
+.footer-follow a {
+    margin-right: 7px !important;
+}
+
+#myBtn {
+    display: none;
+    color: #fff;
+    background: #16c9f6;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border-radius: 10px;
+}
+
+#myBtn:hover {
+    background: #606060;
+}
+
+/* ********************************footer end******************************************************************************** */
+
+/* *********************************media query******************************************************************************** */
+@media(max-width:768px) {
+    * {
+        margin-right: 0 !important;
+    }
+
+    .service-div {
+        margin-left: 17px;
+    }
+
+    .nav-item {
+        text-align: center;
+    }
+
+    .header {
+        height: 94vh;
+    }
+
+    .pricing,
+    .clients,
+    .contactus {
+        height: auto;
+        margin-top: 50px;
+    }
+    .contactus{
+        margin-bottom: auto;
+    }
+    .skills{
+        margin-bottom: 25px;
+    }
+    .cards{
+        padding: 45px!important;
+    }
+    .probox {
+        margin: 17px;
+    }
+
+    .card-second {
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+
+    .contact p {
+        padding: 0 40px;
+    }
+
+}
